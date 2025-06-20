@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/cart.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-location">
+                <div class="logo">
+                    <img src="assets/images/Brand_wolt_v002.png">
+                </div>
+                <div class="location">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+                    <span class="street">Zahid Xelilov 32</span>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="search-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Wolt-da axtarın...">
+                </div>
+            </div>
+
+            <div class="login-register">
+                <button class="login">Daxil ol</button>
+                <button class="register">Qeydiyyatdan keçin</button>
+            </div>
+
+            <!-- <div class="account-cart">
+                <div class="account">
+                    <div class="profile">
+                        <span>GM</span>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div> -->
+
+            <div class="line"></div>
+
+
+
+        </div>
+    </header>
+
+
+
+
+    <main>
+        <section id="cart">
+            <div class="container">
+                <div class="cart-table">
+                    <table>
+                        <tr>
+                            <th>Məhsul</th>
+                            <th>Miqdar</th>
+                            <th>Qiymət</th>
+                            <th>Sil</th>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="title-image">
+                                    <div class="image-button">
+                                        <div class="image">
+                                            <img src="assets/images/pr1.avif" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="title">
+                                        <h6>Product1</h6>
+                                        <p>Lorem ipsum dolor sit es excepturi aperiam sit quos illo, veniam beatae</p>
+                                        <div class="discount-price">
+                                            <p class="price">50 ₼</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart-counter">
+                                    <button onclick="decrement()">-</button>
+                                    <input type="number" id="counter" value="0" min="0" onchange="handleManualChange()">
+                                    <button onclick="increment()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                50 ₼
+                            </td>
+                            <td>
+                                <button class="remove-btn" onclick="removeRow(this)"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="title-image">
+                                    <div class="image-button">
+                                        <div class="image">
+                                            <img src="assets/images/pr1.avif" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="title">
+                                        <h6>Product1</h6>
+                                        <p>Lorem ipsum dolor sit es excepturi aperiam sit quos illo, veniam beatae</p>
+                                        <div class="discount-price">
+                                            <p class="price">50 ₼</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+
+                            </td>
+
+                            <td>
+                                <div class="cart-counter">
+                                    <button onclick="decrement()">-</button>
+                                    <input type="number" id="counter" value="0" min="0" onchange="handleManualChange()">
+                                    <button onclick="increment()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                50 ₼
+                            </td>
+                            <td>
+                                <button class="remove-btn" onclick="removeRow(this)"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="title-image">
+                                    <div class="image-button">
+                                        <div class="image">
+                                            <img src="assets/images/pr1.avif" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="title">
+                                        <h6>Product1</h6>
+                                        <p>Lorem ipsum dolor sit es excepturi aperiam sit quos illo, veniam beatae</p>
+                                        <div class="discount-price">
+                                            <p class="price">50 ₼</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="cart-counter">
+                                    <button onclick="decrement()">-</button>
+                                    <input type="number" id="counter" value="0" min="0" onchange="handleManualChange()">
+                                    <button onclick="increment()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                50 ₼
+                            </td>
+                            <td>
+                                <button class="remove-btn" onclick="removeRow(this)"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="title-image">
+                                    <div class="image-button">
+                                        <div class="image">
+                                            <img src="assets/images/pr1.avif" alt="">
+                                        </div>
+
+                                    </div>
+                                    <div class="title">
+                                        <h6>Product1</h6>
+                                        <p>Lorem ipsum dolor sit es excepturi aperiam sit quos illo, veniam beatae</p>
+                                        <div class="discount-price">
+                                            <p class="price">50 ₼</p>
+                                        </div>
+                                    </div>
+
+
+                                </div>
+                            </td>
+
+
+                            <td>
+                                <div class="cart-counter">
+                                    <button onclick="decrement()">-</button>
+                                    <input type="number" id="counter" value="0" min="0" onchange="handleManualChange()">
+                                    <button onclick="increment()">+</button>
+                                </div>
+                            </td>
+                            <td>
+                                50 ₼
+                            </td>
+                            <td>
+                                <button class="remove-btn" onclick="removeRow(this)"><i
+                                        class="fa-solid fa-trash-can"></i></button>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <div class="cart-summary">
+                        <div class="total">
+                            Cəmi: <span id="total-price">0 ₼</span>
+                        </div>
+                        <button class="order-btn" onclick="placeOrder()">Sifarişi tamamla</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+
+    <footer class="footer pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <div class="logo">
+                        <img src="assets/images/Brand_wolt_v002.png">
+
+                    </div>
+                    <div class="app">
+                        <div class="play-market">
+                            <img src="assets/images/google-play-badge__1_.png">
+                        </div>
+                        <div class="apple">
+                            <img src="assets/images/Screenshot 2025-05-17 181152.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Wolt ilə partnyor</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-white text-decoration-none">Kuryerlər üçün</a></li>
+                        <li><a href="/orders" class="text-white text-decoration-none">Restoranlar üçün</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Faydalı linklər</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="restaurants.html" class="text-white text-decoration-none">Restoranlar</a></li>
+                        <li><a href="/orders" class="text-white text-decoration-none">Sifarişlər</a></li>
+                        <li><a href="/profile" class="text-white text-decoration-none">Profil</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Contact</h5>
+                    <p>Email: support@wolt.com</p>
+                    <p>Phone: +389359835</p>
+                </div>
+            </div>
+
+            <hr class="border-light" />
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Wolt. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/cart.js"></script>
+</body>
+
+</html>

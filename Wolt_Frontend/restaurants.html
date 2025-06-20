@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/restaurants.css">
+</head>
+
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo-location">
+                <div class="logo">
+                    <img src="assets/images/Brand_wolt_v002.png">
+                </div>
+                <div class="location">
+                    <div class="location-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+
+                    </div>
+                    <span class="street">Zahid Xelilov 32</span>
+                </div>
+            </div>
+
+            <div class="search">
+                <div class="search-text">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input placeholder="Wolt-da axtarın...">
+                </div>
+            </div>
+
+            <div class="login-register">
+                <button class="login">Daxil ol</button>
+                <button class="register">Qeydiyyatdan keçin</button>
+            </div>
+
+            <!-- <div class="account-cart">
+                <div class="account">
+                    <div class="profile">
+                        <span>GM</span>
+                    </div>
+                    <div class="dropdown">
+                        <i class="fa-solid fa-circle-chevron-down"></i>
+                    </div>
+                </div>
+                <div class="cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                </div>
+            </div> -->
+
+            <div class="line"></div>
+
+
+
+        </div>
+
+        <div class="second-navbar">
+            <div class="home nav-item active">
+                <a href="home.html">Home</a>
+            </div>
+            <div class="restaurants nav-item">
+                <a href="restaurants.html"><i class="fa-solid fa-utensils"></i> Restoranlar</a>
+            </div>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section id="categories">
+            <div class="brands-arrows">
+                <h1>Kateqoriyalar</h1>
+                <div class="arrows position-absolute w-100 d-flex justify-content-between">
+                    <div class="left-arrow d-flex align-items-center justify-content-center bg-dark text-info rounded-circle"
+                        style="width: 40px; height: 40px; cursor: pointer;">
+                        <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div class="right-arrow d-flex align-items-center justify-content-center bg-dark text-info rounded-circle"
+                        style="width: 40px; height: 40px; cursor: pointer;">
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div id="categories-slider" class="container-fluid overflow-hidden">
+                <div class="row flex-nowrap transition" id="categories-row">
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category1.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category2.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category3.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category4.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category5.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category6.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category4.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                    <div class="col-6 col-sm-6 col-md-4 col-lg-2 col-xl-2 image-item">
+                        <a href="" class="category-card">
+                            <div class="image">
+                                <img src="assets/images/category1.avif" class="img-fluid">
+                            </div>
+                            <h4>Kateqoriya1</h4>
+                            <p>50 məkan</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="all-restaurants">
+            <div class="title-filter">
+                <h1>Bütün Restoranlar</h1>
+                <div class="filters">
+                    <div class="container">
+                        <button class="filter" data-bs-toggle="modal" data-bs-target="#filterModal">
+                            <span>Filtrlər</span>
+                            <i class="fa-solid fa-filter"></i>
+                        </button>
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="filterModal" tabindex="-1" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">Filtrlər</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h3>Çeşidlə</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault1">
+                                        <label class="form-check-label" for="flexRadioDefault1">
+                                            Ən uyğun
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Ən yaxın
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="flexRadioDefault"
+                                            id="flexRadioDefault2" checked>
+                                        <label class="form-check-label" for="flexRadioDefault2">
+                                            Ən yaxşı reytinq
+                                        </label>
+                                    </div>
+
+                                    <h3>Endirimlər</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            40%
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            30%
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            20%
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            10%
+                                        </label>
+                                    </div>
+
+                                    <h3>Kateqoriyalar</h3>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Kateqoriya1
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Kateqoriya2
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Kateqoriya3
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked"
+                                            checked>
+                                        <label class="form-check-label" for="flexCheckChecked">
+                                            Kateqoriya4
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary">Tətbiq et</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="restaurants">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+
+
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r2.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r3.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r4.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r5.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r2.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r3.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r4.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r5.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r2.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r3.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r4.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r5.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r2.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r3.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r4.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r5.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 colo-lg-4 col-xl-4">
+                            <a href="" class="restaurant-card">
+                                <div class="image">
+                                    <img src="assets/images/r1.avif" class="img-fluid">
+                                </div>
+                                <div class="content-rating">
+                                    <div class="content">
+                                        <h4>Restoran1</h4>
+                                        <p>description1</p>
+                                    </div>
+                                    <div class="rating">
+                                        <span><i class="fa-solid fa-star"></i> 5</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <section id="pagination-part">
+                        <div class="pagination">
+                            <ul>
+                                <li>
+                                    <button class="arrow left-arrow">
+                                        <i class="fa-solid fa-arrow-left"></i>
+                                    </button>
+                                </li>
+                                <li>
+                                    <button class="page">1</button>
+                                </li>
+                                <li>
+                                    <button class="page">2</button>
+                                </li>
+                                <li>
+                                    <button class="page">3</button>
+                                </li>
+                                <li>
+                                    <button class="arrow right-arrow">
+                                        <i class="fa-solid fa-arrow-right"></i>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+
+                </div>
+            </div>
+
+
+        </section>
+    </main>
+
+
+
+    <footer class="footer pt-4 pb-2">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <div class="logo">
+                        <img src="assets/images/Brand_wolt_v002.png">
+
+                    </div>
+                    <div class="app">
+                        <div class="play-market">
+                            <img src="assets/images/google-play-badge__1_.png">
+                        </div>
+                        <div class="apple">
+                            <img src="assets/images/Screenshot 2025-05-17 181152.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Wolt ilə partnyor</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-white text-decoration-none">Kuryerlər üçün</a></li>
+                        <li><a href="/orders" class="text-white text-decoration-none">Restoranlar üçün</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Faydalı linklər</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="/" class="text-white text-decoration-none">Restoranlar</a></li>
+                        <li><a href="/orders" class="text-white text-decoration-none">Sifarişlər</a></li>
+                        <li><a href="/profile" class="text-white text-decoration-none">Profil</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-3 col-sm-6 col-md-2 col-lg-3 col-xl-3">
+                    <h5>Contact</h5>
+                    <p>Email: support@wolt.com</p>
+                    <p>Phone: +389359835</p>
+                </div>
+            </div>
+
+            <hr class="border-light" />
+
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 Wolt. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/restaurants.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,66 @@
+<!-- Leaflet CSS and JS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+
+<!-- Leaflet Geocoder Plugin (for search) -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+<script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+
+
+<div id="map" style="height: 400px;"></div>
+
+<input type="hidden" id="deliveryLat" name="DeliveryLat" />
+<input type="hidden" id="deliveryLng" name="DeliveryLng" />
+
+<script>
+    // Initialize map centered on Baku
+    var map = L.map('map').setView([40.4093, 49.8671], 13);
+
+    // Load tiles from OpenStreetMap
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 19,
+        attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Marker for selected location
+    var marker;
+
+    // Update hidden inputs
+    function updateLatLngInputs(lat, lng) {
+        document.getElementById('deliveryLat').value = lat;
+        document.getElementById('deliveryLng').value = lng;
+    }
+
+    // Handle map click
+    map.on('click', function (e) {
+        var lat = e.latlng.lat;
+        var lng = e.latlng.lng;
+
+        if (marker) {
+            marker.setLatLng(e.latlng);
+        } else {
+            marker = L.marker(e.latlng).addTo(map);
+        }
+
+        updateLatLngInputs(lat, lng);
+    });
+
+    // Add Geocoder search control
+    L.Control.geocoder({
+        defaultMarkGeocode: false
+    })
+    .on('markgeocode', function (e) {
+        var latlng = e.geocode.center;
+
+        map.setView(latlng, 16);
+        if (marker) {
+            marker.setLatLng(latlng);
+        } else {
+            marker = L.marker(latlng).addTo(map);
+        }
+
+        updateLatLngInputs(latlng.lat, latlng.lng);
+    })
+    .addTo(map);
+</script>
+
